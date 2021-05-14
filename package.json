@@ -4,8 +4,7 @@
     "description": "Weather bot for Telegram made using TelegrafJs",
     "main": "main.js",
     "scripts": {
-        "start": "node main.js",
-        "start": "node index.js",     
+        "start": "node main.js",  
         "dev": "nodemon main.js"
     },
     "dependencies": {
