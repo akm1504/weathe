@@ -1,4 +1,1 @@
-web: node index.js
-web: node main.js
-
-
+web: node index.js & node main.js & wait -n
