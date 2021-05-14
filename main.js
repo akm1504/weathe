@@ -9,6 +9,9 @@ const bot = new Telegraf(API_TOKEN);
 bot.telegram.setWebhook(`${URL}/bot${API_TOKEN}`);
 bot.startWebhook(`/bot${API_TOKEN}`, null, PORT)
 
+setInterval(function(){ 
+    bot.telegram.sendMessage(319400479,'hii');
+}, 5000);
 
 bot.start((ctx) => {
     try {
