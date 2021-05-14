@@ -11,7 +11,7 @@ bot.startWebhook(`/bot${API_TOKEN}`, null, PORT)
 
 setInterval(function(){ 
     bot.telegram.sendMessage(319400479,'hii');
-}, 5000);
+}, 250000);
 
 bot.start((ctx) => {
     try {
