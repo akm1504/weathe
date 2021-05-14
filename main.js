@@ -6,7 +6,7 @@ const bot = new Telegraf(config.BOT_TOKEN);
 
 bot.start((ctx) => {
     try {
-        ctx.replyWithHTML(`<b>Hey, ${ctx.message.chat.first_name} 👋👋</b>\n\n<em>Welcome to <b>Weather Bot</b>.\n\nJust send your city or village's name & you will get the weather.\n\nBrought you by @tprojects</em>`)
+        ctx.replyWithHTML(`<b>Hey it's me ak, ${ctx.message.chat.first_name} 👋👋</b>\n\n<em>Welcome to <b>Weather Bot</b>.\n\nJust send your city or village's name & you will get the weather.\n\nBrought you by @tprojects</em>`)
     } catch (e) {}
 })
 
