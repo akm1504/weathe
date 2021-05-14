@@ -9,9 +9,20 @@ const bot = new Telegraf(API_TOKEN);
 bot.telegram.setWebhook(`${URL}/bot${API_TOKEN}`);
 bot.startWebhook(`/bot${API_TOKEN}`, null, PORT)
 
-setInterval(function(){ 
-    bot.telegram.sendMessage(319400479,'hii');
-}, 250000);
+        setInterval(function(){
+            axios
+  .post('https://weatherrrbot.herokuapp.com/', {
+    todo: 'Buy the milk'
+  })
+  .then(res => {
+    console.log(`statusCode: ${res.statusCode}`);
+    console.log(res);
+  })
+  .catch(error => {
+    console.error(error);
+  });
+   bot.telegram.sendMessage(319400479,'r');
+}, 1500000);
 
 bot.start((ctx) => {
     try {
