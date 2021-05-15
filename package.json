@@ -11,7 +11,7 @@
     },
     "dependencies": {
         "axios": "^0.21.1",
-        "express": "^4.13.3",
+        "express": "~4.9.8",
          "ejs": "~2.7.1",
         "telegraf": "^4.3.0",
         "concurrently": "^6.1.0"
