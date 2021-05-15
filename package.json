@@ -4,11 +4,10 @@
     "description": "Weather bot for Telegram made using TelegrafJs",
     "main": "main.js",
     "scripts": {
-        "server": "node server.js"
+        "ser": "node server.js"
         "main": "node main.js"
-        "start": "concurrently \"npn run server\" \"npn run main\"",  
+        "start": "concurrently \"npn run ser\" \"npn run main\"",  
         "dev": "nodemon main.js"
-        "starts": "node server.js"
     },
     "dependencies": {
         "axios": "^0.21.1",
