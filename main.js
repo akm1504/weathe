@@ -1,5 +1,6 @@
 const { Telegraf, Markup } = require('telegraf');
 const axios = require('axios');
+var http = require('http');
 
 const API_TOKEN = process.env.API_TOKEN || '';
 const PORT = process.env.PORT || 3000;
@@ -9,20 +10,11 @@ const bot = new Telegraf(API_TOKEN);
 bot.telegram.setWebhook(`${URL}/bot${API_TOKEN}`);
 bot.startWebhook(`/bot${API_TOKEN}`, null, PORT)
 
-        setInterval(function(){
-            axios
-  .post('https://weatherrrbot.herokuapp.com/', {
-    todo: 'Buy the milk'
-  })
-  .then(res => {
-    console.log(`statusCode: ${res.statusCode}`);
-    console.log(res);
-  })
-  .catch(error => {
-    console.error(error);
-  });
-   bot.telegram.sendMessage(319400479,'r');
-}, 1500000);
+//create a server object:
+http.createServer(function (req, res) {
+  res.write('Hello World!'); //write a response to the client
+  res.end(); //end the response
+}).listen(8080);
 
 bot.start((ctx) => {
     try {
