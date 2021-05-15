@@ -15,7 +15,7 @@
         "express": "^4.13.3",
          "ejs": "~2.7.1",
         "telegraf": "^4.3.0",
-        "concurrently": "6.1.0"
+        "concurrently": "^6.1.0"
     },
     "repository": {
         "type": "git",
