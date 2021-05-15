@@ -1,11 +1,14 @@
 var a = function a(){
-var http = require('http');
+var request=require("request");
+request.get("https://weatherrrbot.herokuapp.com/",function(error,response,body){
+           if(error){
+                 console.log(error);
+           }else{
+                 console.log(response);
+         }
+});
+console.log("done"); 
 
-http.createServer(function (req, res) {
-  res.write('Hello World!'); //write a response to the client
-  res.end(); //end the response
-}).listen(8080);
-
-};
+}
 
 module.exports.a = a;
