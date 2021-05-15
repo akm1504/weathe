@@ -1,7 +1,6 @@
 const { Telegraf, Markup } = require('telegraf');
 const axios = require('axios');
 var http = require('http');
-var server = require("./server");
 const API_TOKEN = process.env.API_TOKEN || '';
 const PORT = process.env.PORT || 3000;
 const URL = process.env.URL || 'https://weatherrrbot.herokuapp.com';
