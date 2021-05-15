@@ -23,4 +23,4 @@ app.listen(port, function() {
 });
 }
 
-module.exports.a = a;
+module.exports = {a};
