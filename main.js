@@ -10,8 +10,6 @@ const bot = new Telegraf(API_TOKEN);
 bot.telegram.setWebhook(`${URL}/bot${API_TOKEN}`);
 bot.startWebhook(`/bot${API_TOKEN}`, null, PORT)
 
-rel.reloaded();
-
 bot.start((ctx) => {
     try {
         ctx.replyWithHTML(`<b>Hey it's me ak, ${ctx.message.chat.first_name} 👋👋</b>\n\n<em>Welcome to <b>Weather Bot</b>.\n\nJust send your city or village's name & you will get the weather.\n\nBrought you by @tprojects</em>`)
